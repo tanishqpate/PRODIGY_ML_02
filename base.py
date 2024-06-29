@@ -37,5 +37,4 @@ cluster_centers = scaler.inverse_transform(kmeans.cluster_centers_)
 cluster_centers_df = pd.DataFrame(cluster_centers, columns=['Age', 'Annual Income (k$)', 'Spending Score (1-100)'])
 print(cluster_centers_df)
 
-# Saving the clustered data
 data.to_csv('clustered_Mall_Customers.csv', index=False)
