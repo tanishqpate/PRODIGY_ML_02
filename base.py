@@ -7,7 +7,6 @@ data = pd.read_csv('Mall_Customers.csv')
 
 X = data[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']]
 
-# Standardizing the data
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
